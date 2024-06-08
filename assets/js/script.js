@@ -92,7 +92,12 @@ function showResult() {
 }
 
 /**Event listener for the next button */
-nextButton.addEventListener(
-    
-);
+nextButton.addEventListener('click', () => {
+    if (quizEnded) {
+        startQuiz(); //restart the quiz if it is completed
+    } else {
+        questionIndex++; // Move to the next question
+        showQuestion(); // Show the next question
+    }
+});
 
