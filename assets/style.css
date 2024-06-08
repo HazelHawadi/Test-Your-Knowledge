@@ -103,3 +103,16 @@ h1 {
     background-color: #c21307;
     color: white;
 }
+
+/* Styles for the next question button */
+.next-btn {
+    margin-top: 20px;
+}
+
+.next {
+    display: none;
+}
+
+#result-area {
+    margin-top: 20px;
+}
