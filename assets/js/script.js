@@ -101,3 +101,6 @@ nextButton.addEventListener('click', () => {
     }
 });
 
+// Event listener for the restart button
+restartButton.addEventListener('click', startQuiz); // Restart the quiz when the restart button is clicked
+
