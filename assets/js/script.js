@@ -56,7 +56,7 @@ Array.from(answerButtonsElement.children).forEach(button => {
         button.classList.add('correct'); //to highlight the correct answer
     }
     if (button === selectedButton) {
-        correctWrong(button, correct); //to highlight the selected answer
+        setCorrectWrong(button, correct); //to highlight the selected answer
     }
 });
 
@@ -69,8 +69,13 @@ if (questionIndex < questions.length - 1) {
 }
 }
 /**Function to set if the answer selected is correct or wrong */ 
-function correctWrong() {
-    
+function setCorrectWrong(element, correct) {
+    clearCorrectWrong(element);
+    if (correct) {
+        element.classList.add('correct');
+    } else {
+        element.classList.add('wrong');
+    }
 }
 
 /**Function to display the result */
