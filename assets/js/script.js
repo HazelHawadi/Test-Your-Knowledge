@@ -85,11 +85,14 @@ function clearCorrectWrong(element) {
 
 /**Function to display the result */
 function showResult() {
-    
+    nextButton.classList.add('next'); //will hide the next button
+    resultArea.classList.remove('next'); //will show the result area
+    restartButton.classList.remove('next'); // Show the restart button
+    resultElement.innerText = `You scored ${score} out of ${questions.length}!`; // Display the result
 }
 
 /**Event listener for the next button */
 nextButton.addEventListener(
-
+    
 );
 
