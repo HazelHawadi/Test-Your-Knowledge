@@ -30,9 +30,9 @@ function showQuestion() {
 
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement('button');
-        button.innerText = answer.text;
+        button.innerText = answer;
         button.classList.add('btn');
-        button.dataset.correct = answer.correct;
+        button.dataset.answer = answer;
         button.addEventListener('click', selectAnswer);
         answerButtonsElement.appendChild(button);
     });
@@ -41,12 +41,21 @@ function showQuestion() {
     progressElement.style.width = ((questionIndex + 1) / questions.length) * 100 + '%';
 }
 
+function resetState() {
+    nextButton.classList.add('next');
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+}
+
 /**Function to handle the answer selection */
-function chooseAnswer(h) {
-    if (quizEnded) return;
-    const selectedButton = h.target; //to get the selected button
-    const correct = selectedButton.dataset.correct === 'true';
+function selectAnswer(h) {
+
+    if (quizCompleted) return;
+    const selectedButton = h.target;
+
     if (correct) {
+
         score++; //to increase the score if the answer is correct
 }
 /**to highlight answer buttons if the answer is correct or wrong*/
@@ -81,13 +90,6 @@ function setCorrectWrong(element, correct) {
 function clearCorrectWrong(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
-}
-
-function resetState() {
-    nextButton.classList.add('next');
-    while (answerButtonsElement.firstChild) {
-        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
-    }
 }
 
 /**Function to display the result */
