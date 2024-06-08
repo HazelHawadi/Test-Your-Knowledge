@@ -59,6 +59,14 @@ Array.from(answerButtonsElement.children).forEach(button => {
         correctWrong(button, correct); //to highlight the selected answer
     }
 });
+
+// Show the next button or result area based on the progress
+if (questionIndex < questions.length - 1) {
+    nextButton.classList.remove('next');
+} else {
+    quizEnded = true;
+    showResult(); // Show the result area
+}
 }
 /**Function to set if the answer selected is correct or wrong */ 
 function correctWrong() {
