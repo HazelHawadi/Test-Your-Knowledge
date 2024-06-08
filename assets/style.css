@@ -1,0 +1,9 @@
+/* Font Styles */
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+/*Asterisk Wildcard Selector*/
+* {
+    padding: 20px; 
+    margin: 0;
+    box-sizing: border-box;
+}
