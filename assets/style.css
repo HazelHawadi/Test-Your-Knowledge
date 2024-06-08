@@ -67,3 +67,39 @@ h1 {
     background: #4caf50;
     transition: width 0.4s;
 }
+
+/* Styles for the Answer Buttons */
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn {
+    padding: 10px;
+    background-color: #007bff;
+    border: none;
+    color: black;
+    border-radius: 5px;
+    cursor: pointer; /*makes the pointer change style when its over the answer section*/
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Changes the color of the answer buttons when the pointer is over them */
+}
+
+.btn.selected {
+    background-color: #0056b3;
+    color: white;
+}
+
+.btn.correct {
+    background-color: rgb(6, 161, 6);
+    color: white;
+}
+
+.btn.wrong {
+    background-color: #c21307;
+    color: white;
+}
