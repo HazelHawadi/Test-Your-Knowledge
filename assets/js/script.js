@@ -24,6 +24,9 @@ function startQuiz() {
 
 /**Function to display the current question and answer choices */
 function showQuestion() {
+    resetState();
+    const currentQuestion = questions[questionIndex];
+    questionElement.innerText = currentQuestion.question; //to display the current question
 
 }
 
