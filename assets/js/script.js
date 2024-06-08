@@ -78,6 +78,11 @@ function setCorrectWrong(element, correct) {
     }
 }
 
+function clearCorrectWrong(element) {
+    element.classList.remove('correct');
+    element.classList.remove('wrong');
+}
+
 /**Function to display the result */
 function showResult() {
     
