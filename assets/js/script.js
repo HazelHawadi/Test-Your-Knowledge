@@ -16,7 +16,7 @@ const progressElement = document.getElementById('progress');
 function startQuiz() {
     questionIndex = 0; // to reset the question index
     score = 0;
-    quizCompleted = false; 
+    quizEnded = false; 
     nextButton.classList.add('next');
     resultArea.classList.add('next'); 
     showQuestion(); //to show the first question
@@ -36,13 +36,30 @@ function showQuestion() {
         button.addEventListener('click', selectAnswer);
         answerButtonsElement.appendChild(button);
     });
+
+    //progress Bar
+    progressElement.style.width = ((questionIndex + 1) / questions.length) * 100 + '%';
 }
 
 /**Function to handle the answer selection */
-function selectAnswer() {
-    
+function chooseAnswer(h) {
+    if (quizEnded) return;
+    const selectedButton = h.target; //to get the selected button
+    const correct = selectedButton.dataset.correct === 'true';
+    if (correct) {
+        score++; //to increase the score if the answer is correct
 }
-
+/**to highlight answer buttons if the answer is correct or wrong*/
+Array.from(answerButtonsElement.children).forEach(button => {
+    const isCorrect = button.dataset.correct === 'true';
+    if (!correct && isCorrect) {
+        button.classList.add('correct'); //to highlight the correct answer
+    }
+    if (button === selectedButton) {
+        correctWrong(button, correct); //to highlight the selected answer
+    }
+});
+}
 /**Function to set if the answer selected is correct or wrong */ 
 function correctWrong() {
     
