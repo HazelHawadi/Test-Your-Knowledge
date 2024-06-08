@@ -12,10 +12,14 @@ const resultElement = document.getElementById('result');
 const restartButton = document.getElementById('restart-btn');
 const progressElement = document.getElementById('progress');
 
-
 /**Function to start the quiz */
 function startQuiz() {
-   
+    questionIndex = 0; // to reset the question index
+    score = 0;
+    quizCompleted = false; 
+    nextButton.classList.add('next');
+    resultArea.classList.add('next'); 
+    showQuestion(); //to show the first question
 }
 
 /**Function to display the current question and answer choices */
