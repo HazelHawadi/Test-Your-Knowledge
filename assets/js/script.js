@@ -28,6 +28,14 @@ function showQuestion() {
     const currentQuestion = questions[questionIndex];
     questionElement.innerText = currentQuestion.question; //to display the current question
 
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement('button');
+        button.innerText = answer.text;
+        button.classList.add('btn');
+        button.dataset.correct = answer.correct;
+        button.addEventListener('click', selectAnswer);
+        answerButtonsElement.appendChild(button);
+    });
 }
 
 /**Function to handle the answer selection */
