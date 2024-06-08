@@ -83,6 +83,13 @@ function clearCorrectWrong(element) {
     element.classList.remove('wrong');
 }
 
+function resetState() {
+    nextButton.classList.add('next');
+    while (answerButtonsElement.firstChild) {
+        answerButtonsElement.removeChild(answerButtonsElement.firstChild);
+    }
+}
+
 /**Function to display the result */
 function showResult() {
     nextButton.classList.add('next'); //will hide the next button
@@ -104,3 +111,4 @@ nextButton.addEventListener('click', () => {
 // Event listener for the restart button
 restartButton.addEventListener('click', startQuiz); // Restart the quiz when the restart button is clicked
 
+startQuiz();
