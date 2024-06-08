@@ -29,3 +29,41 @@ h1 {
     text-transform: uppercase;
     background-color: #000;
 }
+
+/* Quiz Area styles */
+.quiz-area {
+    background: #fff;
+    border-radius: 8px; /* Controls the edges of the quiz box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 10px; /* makes sure there's space between the heading and quiz area */
+    position: relative;
+    color: #000; /* makes sure the text inside quiz area is visible */
+    font-size: large;
+    min-height: 300px; /* Minimum height to prevent resizing */
+}
+
+.quiz-container {
+    width: 100%;
+    max-width: 600px; 
+}
+
+/* Styles for the progress bar */
+#progress-bar {
+    height: 10px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+#progress {
+    height: 100%;
+    width: 0;
+    background: #4caf50;
+    transition: width 0.4s;
+}
