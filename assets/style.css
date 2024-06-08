@@ -116,3 +116,93 @@ h1 {
 #result-area {
     margin-top: 20px;
 }
+
+/*Media Queries*/
+@media (max-width: 345px) {
+    .quiz-area {
+        max-width: 40vh;
+    }
+
+    h1 {
+        font-size: 90%;
+        padding-bottom: 20px;
+    }
+
+    #progress-bar {
+        height: 6px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 414px) {
+    .quiz-area {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 90%;
+        padding-bottom: 20px;
+    }
+    
+}
+
+/* Media queries for smaller devices */
+@media screen and (max-width: 768px) {
+    .quiz-area {
+        padding: 16px;
+    }
+
+    #question {
+        font-size: 18px;
+    }
+
+    .btn-container {
+        display: grid;
+        grid-template-columns: minmax(120px, 1fr);
+        gap: 10px;
+    }
+
+    .btn {
+        font-size: 17px;
+        padding: 8px;
+    }
+
+    .next-btn {
+        font-size: 17px;
+        padding: 8px 16px;
+    }
+
+    #restart-btn {
+        font-size: 17px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .quiz-area {
+        padding: 10px;
+    }
+
+    #question {
+        font-size: 15px;
+    }
+
+    .btn-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 6px;
+    }
+
+    .next-btn {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+
+    #restart-btn {
+        font-size: 15px;
+        padding: 6px 12px;
+    }
+}
