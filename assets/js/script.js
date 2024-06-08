@@ -10,6 +10,18 @@ const resultElement = document.getElementById('result');
 const restartButton = document.getElementById('restart-btn');
 const progressElement = document.getElementById('progress');
 
+const form= document.getElementById('start-form');
+if (form) {
+    form.addEventListener('submit', function(event){
+        event.preventDefault(); // Prevents default form submission actions
+        const username = document.getElementById('name').value;
+        localStorage.setItem('username', username); // Stores username in localstorage
+        window.location.href = 'quiz.html';
+    })
+}
+
+const username = localStorage.getItem('username'); // Get username from local storage
+
 /**Function to start the quiz*/
 function startQuiz() {
     currentQuestionIndex = 0; //to reset question index
@@ -106,7 +118,7 @@ function showResult() {
     nextButton.classList.add('next');
     resultArea.classList.remove('next');
     restartButton.classList.remove('next');
-    resultElement.innerText = `You scored ${score} out of ${questions.length}!`; // Display the result
+    resultElement.innerText = `${username}, You scored ${score} out of ${questions.length}!`; // Display the username and result
 }
 
 /**Event listener for the next button*/
