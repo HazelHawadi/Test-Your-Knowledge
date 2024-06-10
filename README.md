@@ -1,6 +1,6 @@
 # Test Your Knowledge: JavaScipt, HTML, CSS
 
-![Website Mockup](assets/images/readme/mock%20images.png)
+![Website Mockup](readme/mock-images.png)
 
 [This is a link to the live website](https://hazelhawadi.github.io/Test-Your-Knowledge/)
 
@@ -24,12 +24,12 @@ The goal of the quiz is to help users prepare for assessments and deepen their u
 
 ## Features
 ### Home Page
-![Home Page Features](assets/images/readme/username%20page.png)
+![Home Page Features](readme/username-page.png)
 
 - Users are required to enter their name and click Take Quiz to start the quiz. The name is stored in the browser's local storage, allowing for a personalized experience where the user's name is displayed on the result page along with their score.
 
 ### Quiz Page
-![quiz Page Features](assets/images/readme/quiz%20page.png)
+![quiz Page Features](readme/quiz-page.png)
 
 - Quiz Title: "Test Your Knowledge: JavaScript, HTML, CSS".
 - Start Button: Allows users to initiate the quiz.
@@ -40,13 +40,13 @@ The goal of the quiz is to help users prepare for assessments and deepen their u
 - Next Button: Allows users to go to the next question only after selecting an answer.
 
 ### Result Page
-![quiz Page Features](assets/images/readme/results%20page.png)
+![quiz Page Features](readme/results-page.png)
 - Final Score: Displays the user's final score.
 - Restart Quiz Button: Option to retake the quiz for more practice.
 - Go Home Button: Option for user to go back to the Home page and enter a new username if they wish to start the quiz with a different name.
 
 ### Color Scheme
-![quiz Page Features](assets/images/readme/color%20scheme.png)
+![quiz Page Features](readme/color-scheme.png)
 
 **Why These Colors?**
 - The combination of blue, gray, green, and red creates a great color palette. It is visually appealing and maintains user interest.
@@ -60,3 +60,39 @@ The quiz is designed to be responsive on all screen sizes, ensuring the best use
 - Enhanced layout and font sizes for tablets and larger screens (768px and up).
 Tailored styling for large devices such as laptops and desktops (992px and up).
 
+### Existing Features
+- Quiz Area: Allows users to answer multiple-choice questions on JavaScript, HTML, and CSS.
+- Progress Tracking: Displays a progress bar to indicate how many questions have been answered.
+- Instant Feedback: Provides immediate feedback on whether answers are correct or incorrect.
+- Score Display: Shows the user's score and the total number of questions attempted.
+- Restart Quiz: Allows users to restart the quiz after completion to try again.
+
+### Future Features
+- Leaderboard: Create a leaderboard to track and display high scores.
+- Timer: Add a timer to challenge users to answer questions within a specific time limit.
+- More Topics: Expand the quiz to cover additional topics and languages.
+- Customization: Allow users to customize quiz settings, such as difficulty level or topic selection.
+
+## UX Design
+
+### Target Audience
+The Test Your Knowledge quiz is designed for students and anyone interested in learning and understanding the basics of JavaScript, HTML, and CSS.
+
+## User Stories
+### As a first-time user:
+- I want to start the quiz by entering my name.
+- I want to answer questions covering JavaScript, HTML, and CSS.
+- I want to initialize the quiz by clicking the start button.
+- I want to be able to see the feedback on my answers.
+- I want to be able to see my progress throughout the quiz.
+- i want to see the score at the end of the quiz.
+- I want the option to retake the quiz with shuffled questions to improve my score or simply for more practice.
+- I want the feedback message contain my name.
+- I want to go back to home page and change my name if I want to.
+- I want to be able to use the application across different screen sizes.
+
+### As a returning user:
+- I want to be able to see a leaderboard to track and display high scores.
+- I want a timer to challenge us users finish the quiz within a certain amount of time.
+- I want more questions, languages and topics to be covered.
+- I want to be able to customize the quiz settings, such as selecting difficulty level or topic.
