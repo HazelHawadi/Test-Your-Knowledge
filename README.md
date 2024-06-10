@@ -153,6 +153,16 @@ ADD IMAGE TESTS FOR DESKTOP AND MOBILE
     -Open a terminal in the directory, type git clone and paste the link.
     - A clone of the repository will be created on your device.
 
+## Download the repository manually
+
+1. Navigate to the GitHub Repository Test Your Knowledge..
+2. Click the Code drop-down menu.
+3. Click **Download ZIP**.
+4. Locate the ZIP file and extract it to a folder where you want the repository to be stored.
+5. Open an IDE of your choice.
+6. Navigate to the directory where the repository was extracted.
+7. You will have the contents of the project available offline on your machine.    
+
 ## Techologies
 - HTML
 - CSS
