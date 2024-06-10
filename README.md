@@ -29,7 +29,7 @@ The goal of the quiz is to help users prepare for assessments and deepen their u
 - Users are required to enter their name and click Take Quiz to start the quiz. The name is stored in the browser's local storage, allowing for a personalized experience where the user's name is displayed on the result page along with their score.
 
 ### Quiz Page
-![Home Page Features](assets/images/readme/quiz%20page.png)
+![quiz Page Features](assets/images/readme/quiz%20page.png)
 
 - Quiz Title: "Test Your Knowledge: JavaScript, HTML, CSS".
 - Start Button: Allows users to initiate the quiz.
@@ -38,3 +38,9 @@ The goal of the quiz is to help users prepare for assessments and deepen their u
 - Score Area: Displays the progress.
 - Feedback: Provides immediate feedback on correct and incorrect answers.
 - Next Button: Allows users to go to the next question only after selecting an answer.
+
+### Result Page
+![quiz Page Features](assets/images/readme/results%20page.png)
+- Final Score: Displays the user's final score.
+- Restart Quiz Button: Option to retake the quiz for more practice.
+- Go Home Button: Option for user to go back to the Home page and enter a new username if they wish to start the quiz with a different name.
