@@ -143,6 +143,16 @@ ADD IMAGE TESTS FOR DESKTOP AND MOBILE
 
 [A link for the live website](https://hazelhawadi.github.io/Test-Your-Knowledge/)
 
+## How to run the project Locally
+- **Clone the repository as follows:**
+    - Go to GitHub **Repositories**.
+    - select Test Your Knowlwedge
+    - Click the **Code** drop-down menu and click the HTTPS sub-heading in the **local** tab.
+    - Copy the link.
+    - Open an IDE you prefer to use.
+    -Open a terminal in the directory, type git clone and paste the link.
+    - A clone of the repository will be created on your device.
+
 ## Techologies
 - HTML
 - CSS
