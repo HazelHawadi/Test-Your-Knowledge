@@ -13,7 +13,7 @@ const progressElement = document.getElementById('progress');
 const form = document.getElementById('start-form');
 if (form) {
     form.addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevents default form submission actions
+        event.preventDefault();
         const username = document.getElementById('name').value;
         localStorage.setItem('username', username); // Stores username in localstorage
         window.location.href = 'quiz.html';
@@ -22,11 +22,11 @@ if (form) {
 
 const username = localStorage.getItem('username'); // Get username from local storage
 
-// Function to shuffle questions
+/**Function to shuffle questions */
 function shuffleQuestions(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
+    for (let s = array.length - 1; s > 0; s--) {
+        const j = Math.floor(Math.random() * (s + 1));
+        [array[s], array[j]] = [array[j], array[s]];
     }
 }
 
@@ -40,6 +40,7 @@ function startQuiz() {
     showQuestion();
 }
 
+/**Function to display the current question and answer choices*/
 function showQuestion() {
     resetState(); // Reset the state before showing the new question
     const currentQuestion = questions[currentQuestionIndex];
@@ -55,10 +56,11 @@ function showQuestion() {
         answerButtonsElement.appendChild(button);
     });
 
-    // Update progress bar
+    //progress bar
     progressElement.style.width = ((currentQuestionIndex + 1) / questions.length) * 100 + '%';
 }
 
+/**Function to reset the state*/
 function resetState() {
     nextButton.classList.add('next'); // Hide the next button
     while (answerButtonsElement.firstChild) {
@@ -66,10 +68,11 @@ function resetState() {
     }
 }
 
-function selectAnswer(e) {
+/**Function to handle answer selection*/
+function selectAnswer(h) {
     if (quizEnded) return;
 
-    const selectedButton = e.target; // Get the selected button
+    const selectedButton = h.target; // Get the selected button
     const selectedAnswer = selectedButton.dataset.answer; // Get the selected answer
     const correctAnswer = questions[currentQuestionIndex].correctAnswer; // Get the correct answer
 
@@ -84,10 +87,10 @@ function selectAnswer(e) {
         const answer = button.dataset.answer;
         const isCorrect = answer === correctAnswer;
         if (!correct && isCorrect) {
-            button.classList.add('correct'); // Highlight the correct answer
+            button.classList.add('correct');
         }
         if (button === selectedButton) {
-            setStatusClass(button, correct); // Highlight the selected answer
+            setStatusClass(button, correct);
         }
         // Disable other answer options after an answer is selected
         button.disabled = true;
