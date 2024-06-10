@@ -191,25 +191,24 @@ h1 {
     }
 
     #question {
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .btn-container {
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .btn {
-        font-size: 15px;
+        font-size: 14px;
         padding: 6px;
     }
 
     .next-btn {
-        font-size: 15px;
+        font-size: 14px;
         padding: 6px 12px;
     }
 
     #restart-btn {
-        font-size: 15px;
+        font-size: 14px;
         padding: 6px 12px;
     }
 }
