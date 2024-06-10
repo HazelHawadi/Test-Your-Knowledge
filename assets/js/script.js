@@ -10,29 +10,36 @@ const resultElement = document.getElementById('result');
 const restartButton = document.getElementById('restart-btn');
 const progressElement = document.getElementById('progress');
 
-const form= document.getElementById('start-form');
+const form = document.getElementById('start-form');
 if (form) {
-    form.addEventListener('submit', function(event){
+    form.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevents default form submission actions
         const username = document.getElementById('name').value;
         localStorage.setItem('username', username); // Stores username in localstorage
         window.location.href = 'quiz.html';
-    })
+    });
 }
 
 const username = localStorage.getItem('username'); // Get username from local storage
 
-/**Function to start the quiz*/
+// Function to shuffle questions
+function shuffleQuestions(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+}
+
 function startQuiz() {
-    currentQuestionIndex = 0; //to reset question index
+    currentQuestionIndex = 0; // Reset question index
     score = 0;
-    quizCompleted = false;
-    nextButton.classList.add('next'); //to hide the next button 
-    resultArea.classList.add('next'); //to hide the result area 
+    quizEnded = false;
+    shuffleQuestions(questions); // Shuffle questions at the start of the quiz
+    nextButton.classList.add('next'); // Hide the next button
+    resultArea.classList.add('next'); // Hide the result area
     showQuestion();
 }
 
-/**Function to display the current question and answer choices*/
 function showQuestion() {
     resetState(); // Reset the state before showing the new question
     const currentQuestion = questions[currentQuestionIndex];
@@ -48,11 +55,10 @@ function showQuestion() {
         answerButtonsElement.appendChild(button);
     });
 
-    //progress bar
+    // Update progress bar
     progressElement.style.width = ((currentQuestionIndex + 1) / questions.length) * 100 + '%';
 }
 
-/**Function to reset the state*/
 function resetState() {
     nextButton.classList.add('next'); // Hide the next button
     while (answerButtonsElement.firstChild) {
@@ -60,18 +66,17 @@ function resetState() {
     }
 }
 
-/**Function to handle answer selection*/
-function selectAnswer(h) {
+function selectAnswer(e) {
     if (quizEnded) return;
 
-    const selectedButton = h.target; // Get the selected button
+    const selectedButton = e.target; // Get the selected button
     const selectedAnswer = selectedButton.dataset.answer; // Get the selected answer
     const correctAnswer = questions[currentQuestionIndex].correctAnswer; // Get the correct answer
 
     // Check if the selected answer is correct
     const correct = selectedAnswer === correctAnswer;
     if (correct) {
-        score++; // Increase the score if the answer is correct
+        score++; // Increment score if the answer is correct
     }
 
     // Highlight correct and wrong answers
@@ -88,7 +93,7 @@ function selectAnswer(h) {
         button.disabled = true;
     });
 
-    /**Show the next button or result area based on the progress*/
+    // Show the next button or result area based on the progress
     if (currentQuestionIndex < questions.length - 1) {
         nextButton.classList.remove('next');
     } else {
@@ -97,7 +102,6 @@ function selectAnswer(h) {
     }
 }
 
-/**Function to set the status class (correct or wrong) on the selected answer*/
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -107,13 +111,11 @@ function setStatusClass(element, correct) {
     }
 }
 
-/**Function to clear any existing status class on the element*/
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
 
-/**Function to display the result*/
 function showResult() {
     nextButton.classList.add('next');
     resultArea.classList.remove('next');
@@ -121,7 +123,6 @@ function showResult() {
     resultElement.innerText = `${username}, You scored ${score} out of ${questions.length}!`; // Display the username and result
 }
 
-/**Event listener for the next button*/
 nextButton.addEventListener('click', () => {
     if (quizEnded) {
         startQuiz();
@@ -131,7 +132,6 @@ nextButton.addEventListener('click', () => {
     }
 });
 
-/**Event listener for the restart button*/
 restartButton.addEventListener('click', startQuiz); // Restart the quiz when the restart button is clicked
 
 startQuiz();
