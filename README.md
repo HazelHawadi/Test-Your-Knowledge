@@ -1,6 +1,6 @@
 # Test Your Knowledge: JavaScipt, HTML, CSS
 
-![Website Mockup](assets/images/mock%20images.png)
+![Website Mockup](assets/images/readme/mock%20images.png)
 
 [This is a link to the live website](https://hazelhawadi.github.io/Test-Your-Knowledge/)
 
@@ -24,7 +24,17 @@ The goal of the quiz is to help users prepare for assessments and deepen their u
 
 ## Features
 ### Home Page
-![Home Page Features](assets/images/username%20page.png)
+![Home Page Features](assets/images/readme/username%20page.png)
 
 - Users are required to enter their name and click Take Quiz to start the quiz. The name is stored in the browser's local storage, allowing for a personalized experience where the user's name is displayed on the result page along with their score.
 
+### Quiz Page
+![Home Page Features](assets/images/readme/quiz%20page.png)
+
+- Quiz Title: "Test Your Knowledge: JavaScript, HTML, CSS".
+- Start Button: Allows users to initiate the quiz.
+- Question Area: Presents questions related to JavaScript, HTML, and CSS.
+- Answer Choices: Multiple-choice options for each question to choose from.
+- Score Area: Displays the progress.
+- Feedback: Provides immediate feedback on correct and incorrect answers.
+- Next Button: Allows users to go to the next question only after selecting an answer.
