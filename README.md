@@ -184,3 +184,11 @@ ADD IMAGE TESTS FOR DESKTOP AND MOBILE
 - Code institute learnings
 - Microsoft word for the tables
 - Balsamiq for wireframes
+
+## Credits 
+### Content 
+- Text Font - https://fonts.google.com/
+- Questions from-  [Code Institute](https://learn.codeinstitute.net)
+
+### Media
+- Backround image - [koto_feja](https://www.istockphoto.com/search/2/image?alloweduse=availableforalluses&_colorindex=%230095ff&mediatype=illustration&numberofpeople=none&phrase=koto_feja)
