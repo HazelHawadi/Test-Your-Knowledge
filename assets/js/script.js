@@ -1,3 +1,4 @@
+/* jshint esversion: 11 */
 document.addEventListener('DOMContentLoaded', () => {
     let currentQuestionIndex = 0;
     let score = 0;
@@ -71,10 +72,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     /**Function to handle answer selection*/
-    function selectAnswer(h) {
+    function selectAnswer(e) {
         if (quizEnded) return;
 
-        const selectedButton = h.target; // Get the selected button
+        const selectedButton = e.target; // Get the selected button
         const selectedAnswer = selectedButton.dataset.answer; // Get the selected answer
         const correctAnswer = questions[currentQuestionIndex].correctAnswer; // Get the correct answer
 

@@ -96,3 +96,25 @@ The Test Your Knowledge quiz is designed for students and anyone interested in l
 - I want a timer to challenge us users finish the quiz within a certain amount of time.
 - I want more questions, languages and topics to be covered.
 - I want to be able to customize the quiz settings, such as selecting difficulty level or topic.
+
+## Techologies
+- HTML
+- CSS
+- JavaScript
+- Font awesome
+- Google Fonts
+- Favicon.cc
+- iStock
+- W3C Jigsaw CSS Validator
+- W3C HTML Markup Validator
+- JSHint for javascript validation
+- Gitpod for creating the website.
+- Github for the source code and to deployment.
+- Google Chrome Dev Tools
+- Google chrome Lighthouse
+-Techsini to create a mockup of the website 
+- Screen Reader for Google Chrome
+- Code Institute's Gitpod Template
+- Code institute learnings
+- Microsoft word for the tables
+- Balsamiq for wireframes
