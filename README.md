@@ -23,5 +23,8 @@ The goal of the quiz is to help users prepare for assessments and deepen their u
 - Retake the quiz with shuffled questions if they are not satisfied with their score or for more practice and they get the option to go back home to stop the quiz.
 
 ## Features
-### Username Feature
-- Username Storage: Users can enter their username before starting the quiz. The username is stored in the browser's local storage, allowing for a personalized experience where the user's name is displayed on the result page along with their score.
+### Home Page
+![Home Page Features](assets/images/username%20page.png)
+
+- Users are required to enter their name and click Take Quiz to start the quiz. The name is stored in the browser's local storage, allowing for a personalized experience where the user's name is displayed on the result page along with their score.
+
