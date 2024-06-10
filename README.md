@@ -44,3 +44,19 @@ The goal of the quiz is to help users prepare for assessments and deepen their u
 - Final Score: Displays the user's final score.
 - Restart Quiz Button: Option to retake the quiz for more practice.
 - Go Home Button: Option for user to go back to the Home page and enter a new username if they wish to start the quiz with a different name.
+
+### Color Scheme
+![quiz Page Features](assets/images/readme/color%20scheme.png)
+
+**Why These Colors?**
+- The combination of blue, gray, green, and red creates a great color palette. It is visually appealing and maintains user interest.
+- The colors are used strategically to differentiate between actions and  information, providing a clear user interface.
+- The colors (green and red) provide immediate visual feedback.
+- The selected colors ensure a consistent look throughout the quiz, making it easy to navigate for users of all ages and backgrounds.
+
+### Responsive Layout
+The quiz is designed to be responsive on all screen sizes, ensuring the best user experience from mobile devices to desktops. Media queries are used to adjust the layout and styling for different screen sizes:
+- Adjustments for large or landscape phones (576px and up).
+- Enhanced layout and font sizes for tablets and larger screens (768px and up).
+Tailored styling for large devices such as laptops and desktops (992px and up).
+
