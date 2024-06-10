@@ -122,10 +122,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function showResult() {
+        questionElement.innerHTML = '';
+        answerButtonsElement.innerHTML = `${username}, You scored ${score} out of ${questions.length}!`; // Display the username and result;
         nextButton.classList.add('next');
         resultArea.classList.remove('next');
         restartButton.classList.remove('next');
-        resultElement.innerText = `${username}, You scored ${score} out of ${questions.length}!`; // Display the username and result
+        resultElement.innerText = '';
     }
 
     nextButton.addEventListener('click', () => {
