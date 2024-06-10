@@ -97,6 +97,52 @@ The Test Your Knowledge quiz is designed for students and anyone interested in l
 - I want more questions, languages and topics to be covered.
 - I want to be able to customize the quiz settings, such as selecting difficulty level or topic.
 
+## Testing 
+
+### User Story Testing
+
+### Feature Testing
+
+### Validator Testing
+
+#### HTML on
+
+#### CSS on
+
+### javascript testing 
+
+### Google Lighthouse 
+### Home Page and Quiz Page
+**Desktop**
+
+ADD IMAGE TESTS FOR DESKTOP AND MOBILE
+**Mobile**
+
+### Results Page
+**Desktop**
+
+ADD IMAGE TESTS FOR DESKTOP AND MOBILE
+**Mobile**
+
+### Unfixed Bugs
+
+## Deployment
+
+- **This project was deployed to GitHub pages. The steps to deploy are as follows:**
+
+    - In the GitHub go to repository.
+    - From the list of repositories, select "Test Your Knowlwdge"
+    - Select **Settings**
+    - Select **Pages** which is in the left side menu
+    - On Branch, select **Main**
+    - Leave the folder as  **/root**
+    - Click **save**
+    - A message that the website is ready to be deployed will appear,efresh the page and the link to the deployed site will be available in a green sub-section on the top of the page,
+    - Refresh the page and the link to the deployed website will be available in a highlighted sub-section on the top of the page.
+    - Click on the link to go to the live site.
+
+[A link for the live website](https://hazelhawadi.github.io/Test-Your-Knowledge/)
+
 ## Techologies
 - HTML
 - CSS
