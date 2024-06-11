@@ -5,6 +5,34 @@
 [This is a link to the live website](https://hazelhawadi.github.io/Test-Your-Knowledge/)
 
 ## Table Of Contents
+- [Project Overview](#project-overview)
+- [Goal](#goal)
+- [Usage](#usage)
+- [Features](#features) 
+  * [Home Page](#home-page)
+  * [Quiz Page](#quiz-page)
+  * [Result Page](#result-page)
+  * [Color Scheme](#color-scheme)
+  * [Responsive layout](#responsive-layout)
+- [Wireframes](#wireframes) 
+- [Existing Features](#existing-features)
+- [Future Features](#future-features)
+- [UX Design](#ux-design)
+    * [User Stories](#user-stories)
+- [Testing](#testing)
+  * [User Story Testing](#user-story-testing)
+  * [Feature testing](#feature-testing)
+- [Validator Testing](#validator-testing)
+- [Google Lighthouse](#google-lighthouse)
+- [Feature testing](#feature-testing)
+- [Unfixed Bugs](#unfixed-bugs)  
+- [Deployment](#deployment)
+- [Clone A Repository](#how-to-run-the-project-locally)
+- [Download A Repository](#download-the-repository) 
+- [Technologies](#technologies)
+- [Credits](#credits)  
+- [Acknowledgements](#acknowledgements) 
+
 
 ## Project Overview
 The Test Your Knowledge Quiz is designed to assist students and anyone interested in learning and understanding the basics of JavaScript, HTML, and CSS. This interactive quiz allows users to test their knowledge through multiple-choice questions and instantly receive feedback on their answers. Whether you're preparing for an assessment or simply interested in advancing your knowledge, this quiz provides an engaging way to learn and assess your understanding of these subjects.
@@ -205,7 +233,7 @@ A comment of the version name was added and no errors were returned for both fil
 6. Navigate to the directory where the repository was extracted.
 7. You will have the contents of the project available offline on your machine.    
 
-## Techologies
+## Technologies
 - HTML
 - CSS
 - JavaScript
