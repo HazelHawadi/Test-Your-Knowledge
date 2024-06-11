@@ -60,6 +60,16 @@ The quiz is designed to be responsive on all screen sizes, ensuring the best use
 - Enhanced layout and font sizes for tablets and larger screens (768px and up).
 Tailored styling for large devices such as laptops and desktops (992px and up).
 
+## Wireframes
+### Home Page
+![Home page](readme/mockup-homepage.png)
+
+### Quiz Page
+![Home page](readme/mockup-quizpage.png)
+
+### Result Page
+![Home page](readme/mockup-feedback.png)
+
 ### Existing Features
 - Home Page: Requires a user to enter their name before starting the quiz.
 - Quiz Area: Allows users to answer multiple-choice questions on JavaScript, HTML, and CSS.
