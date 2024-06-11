@@ -233,6 +233,13 @@ A comment of the version name was added and no errors were returned for both fil
 6. Navigate to the directory where the repository was extracted.
 7. You will have the contents of the project available offline on your machine.    
 
+## Create a repository
+
+1. Sign into Github.
+2. Click the “**+**” icon in the top-right corner and select “**New repository**” .
+3. Enter the name you want to use for your repository and set it to public.
+4. Click “**Create repository**” at the bottom to complete creating your repository.
+
 ## Technologies
 - HTML
 - CSS
