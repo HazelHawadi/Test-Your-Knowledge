@@ -143,17 +143,26 @@ A comment of the version name was added and no errors were returned for both fil
 ![javascript Validator](readme/js-fixed.png)
 
 ### Google Lighthouse 
-### Home Page and Quiz Page
+### Home Page
 **Desktop**
+![Home Page ](readme/home-desktop.png)
 
-ADD IMAGE TESTS FOR DESKTOP AND MOBILE
 **Mobile**
+![Home Page ](readme/home-mobile.png)
+
+### Quiz Page
+**Desktop**
+![Quiz Page ](readme/quiz-desktop.png)
+
+**Mobile**
+![Quiz Page ](readme/quiz-mobile.png)
 
 ### Results Page
 **Desktop**
+![Results Page ](readme/results-desktop.png)
 
-ADD IMAGE TESTS FOR DESKTOP AND MOBILE
 **Mobile**
+![Results Page ](readme/results-mobile.png)
 
 ### Unfixed Bugs
 
