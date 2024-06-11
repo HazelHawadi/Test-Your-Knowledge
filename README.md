@@ -61,11 +61,13 @@ The quiz is designed to be responsive on all screen sizes, ensuring the best use
 Tailored styling for large devices such as laptops and desktops (992px and up).
 
 ### Existing Features
+- Home Page: Requires a user to enter their name before starting the quiz.
 - Quiz Area: Allows users to answer multiple-choice questions on JavaScript, HTML, and CSS.
 - Progress Tracking: Displays a progress bar to indicate how many questions have been answered.
 - Instant Feedback: Provides immediate feedback on whether answers are correct or incorrect.
-- Score Display: Shows the user's score and the total number of questions attempted.
+- Score Display: Shows the user's name, their score and the total number of questions attempted.
 - Restart Quiz: Allows users to restart the quiz after completion to try again.
+- Stop Quiz: allows the user to end game and go back home to the username page.
 
 ### Future Features
 - Leaderboard: Create a leaderboard to track and display high scores.
@@ -100,8 +102,12 @@ The Test Your Knowledge quiz is designed for students and anyone interested in l
 ## Testing 
 
 ### User Story Testing
+![User Stories](readme/user-experiences.png)
 
 ### Feature Testing
+- Home Page: Verified the name input and "Take Quiz" button functionality.
+- Quiz Page: Tested the display of questions, answer selection, feedback, and progress tracking.
+- Result Page: Confirmed the display of the final score and functionality of the "Restart Quiz" and "Go Home" buttons.
 
 ### Validator Testing
 
@@ -192,3 +198,16 @@ ADD IMAGE TESTS FOR DESKTOP AND MOBILE
 
 ### Media
 - Backround image - [koto_feja](https://www.istockphoto.com/search/2/image?alloweduse=availableforalluses&_colorindex=%230095ff&mediatype=illustration&numberofpeople=none&phrase=koto_feja)
+
+### Code
+- tutorial- Yaphi Berhanu and James Hibbard on [SitePoint](https://www.sitepoint.com/simple-javascript-quiz/#displayingthequizquestions)
+- code to seperate last quiz question from the result page- Stacy Hawadi
+- Javascript- [Code Institute](https://learn.codeinstitute.net/dashboard)
+- local storage javascript- [gamedevjs.com](https://gamedevjs.com/articles/using-local-storage-for-high-scores-and-game-progress/#:~:text=Local%20storage%20is%20a%20powerful,if%20the%20browser%20supports%20it)
+
+## Acknowledgements
+I would like to thank Chris Quinn (Mentor) for his guidance and advice.
+
+A big thanks to Slack Community for for always being someone willing to answer my questions.
+
+Also Amy Richardson (Cohort Facilitator) who does check up on my progress.
