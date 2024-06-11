@@ -118,7 +118,8 @@ The Test Your Knowledge quiz is designed for students and anyone interested in l
 - Home Page: Verified the name input and "Take Quiz" button functionality.
 - Quiz Page: Tested the display of questions, answer selection, feedback, and progress tracking.
 - Result Page: Confirmed the display of the final score and functionality of the "Restart Quiz" and "Go Home" buttons.
-# ADD THE TABEL
+
+![Feature Testing](readme/feature-testing.png)
 
 ## Validator Testing
 ### CSS : [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
@@ -126,7 +127,7 @@ The Test Your Knowledge quiz is designed for students and anyone interested in l
 ![Css Validator](readme/css-validation.png)
 
 ### HTML : [W3C Validator](https://validator.w3.org/)
-### Quiz Page
+### Quiz
 **1 Unfixed Bug**
 
 ![HTML Validator](readme/unfixed-quiz.png)
@@ -136,7 +137,7 @@ Got an error on the retake button. No changes have been made.
 **No Bugs Found**
 ![html Validator](readme/index-validation.png)
 
-### javascript testing : [Javascript Validator](https://jshint.com/)
+### javascript : [Javascript Validator](https://jshint.com/)
 ![javascript Validator](readme/js-hint.png)
 A comment of the version name was added and no errors were returned for both files, just the questions variable which was called in a separate file.
 
@@ -165,6 +166,7 @@ A comment of the version name was added and no errors were returned for both fil
 ![Results Page ](readme/results-mobile.png)
 
 ### Unfixed Bugs
+- 1 unfixed bug found [quiz File](#quiz)
 
 ## Deployment
 
@@ -193,7 +195,7 @@ A comment of the version name was added and no errors were returned for both fil
     -Open a terminal in the directory, type git clone and paste the link.
     - A clone of the repository will be created on your device.
 
-## Download the repository manually
+## Download the repository
 
 1. Navigate to the GitHub Repository Test Your Knowledge..
 2. Click the Code drop-down menu.
