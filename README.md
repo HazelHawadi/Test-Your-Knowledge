@@ -1,6 +1,6 @@
 # Test Your Knowledge: JavaScipt, HTML, CSS
 
-![Website Mockup](readme/mock-images.png)
+![Website Mockup](assets/images/readme/mock-images.png)
 
 [This is a link to the live website](https://hazelhawadi.github.io/Test-Your-Knowledge/)
 
@@ -52,12 +52,12 @@ The goal of the quiz is to help users prepare for assessments and deepen their u
 
 ## Features
 ### Home Page
-![Home Page Features](readme/username-page.png)
+![Home Page Features](assets/images/readme/username-page.png)
 
 - Users are required to enter their name and click Take Quiz to start the quiz. The name is stored in the browser's local storage, allowing for a personalized experience where the user's name is displayed on the result page along with their score.
 
 ### Quiz Page
-![quiz Page Features](readme/quiz-page.png)
+![quiz Page Features](assets/images/readme/quiz-page.png)
 
 - Quiz Title: "Test Your Knowledge: JavaScript, HTML, CSS".
 - Start Button: Allows users to initiate the quiz.
@@ -68,13 +68,13 @@ The goal of the quiz is to help users prepare for assessments and deepen their u
 - Next Button: Allows users to go to the next question only after selecting an answer.
 
 ### Result Page
-![quiz Page Features](readme/results-page.png)
+![quiz Page Features](assets/images/readme/results-page.png)
 - Final Score: Displays the user's final score.
 - Restart Quiz Button: Option to retake the quiz for more practice.
 - Go Home Button: Option for user to go back to the Home page and enter a new username if they wish to start the quiz with a different name.
 
 ### Color Scheme
-![quiz Page Features](readme/color-scheme.png)
+![quiz Page Features](assets/images/readme/color-scheme.png)
 
 **Why These Colors?**
 - The combination of blue, gray, green, and red creates a great color palette. It is visually appealing and maintains user interest.
@@ -90,13 +90,13 @@ Tailored styling for large devices such as laptops and desktops (992px and up).
 
 ## Wireframes
 ### Home Page
-![Home page](readme/mockup-homepage.png)
+![Home page](assets/images/readme/mockup-homepage.png)
 
 ### Quiz Page
-![Quiz page](readme/mockup-quizpage.png)
+![Quiz page](assets/images/readme/mockup-quizpage.png)
 
 ### Result Page
-![Result page](readme/mockup-feedback.png)
+![Result page](assets/images/readme/mockup-feedback.png)
 
 ### Existing Features
 - Home Page: Requires a user to enter their name before starting the quiz.
@@ -140,58 +140,58 @@ The Test Your Knowledge quiz is designed for students and anyone interested in l
 ## Testing 
 
 ### User Story Testing
-![User Stories](readme/user-experiences.png)
+![User Stories](assets/images/readme/user-experiences.png)
 
 ### Feature Testing
 - Home Page: Verified the name input and "Take Quiz" button functionality.
 - Quiz Page: Tested the display of questions, answer selection, feedback, and progress tracking.
 - Result Page: Confirmed the display of the final score and functionality of the "Restart Quiz" and "Go Home" buttons.
 
-![Feature Testing](readme/feature-testing.png)
+![Feature Testing](assets/images/readme/feature-testing.png)
 
 ## Validator Testing
 ### CSS : [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
 **No Bugs Found**
-![Css Validator](readme/css-validation.png)
+![Css Validator](assets/images/readme/css-validation.png)
 
 ### HTML : [W3C Validator](https://validator.w3.org/)
 ### Quiz
 **1 Unfixed Bug**
 
-![HTML Validator](readme/unfixed-quiz.png)
+![HTML Validator](assets/images/readme/unfixed-quiz.png)
 Got an error on the retake button. No changes have been made.
 
 ### Home Page
 **No Bugs Found**
-![html Validator](readme/index-validation.png)
+![html Validator](assets/images/readme/index-validation.png)
 
 ### javascript : [Javascript Validator](https://jshint.com/)
-![javascript Validator](readme/js-hint.png)
+![javascript Validator](assets/images/readme/js-hint.png)
 A comment of the version name was added and no errors were returned for both files, just the questions variable which was called in a separate file.
 
-![javascript Validator](readme/js-fixed.png)
+![javascript Validator](assets/images/readme/js-fixed.png)
 
 ### Google Lighthouse 
 ### Home Page
 **Desktop**
-![Home Page ](readme/home-desktop.png)
+![Home Page ](assets/images/readme/home-desktop.png)
 
 **Mobile**
-![Home Page ](readme/home-mobile.png)
+![Home Page ](assets/images/readme/home-mobile.png)
 
 ### Quiz Page
 **Desktop**
-![Quiz Page](readme/quiz-desktop.png)
+![Quiz Page](assets/images/readme/quiz-desktop.png)
 
 **Mobile**
-![Quiz Page](readme/quiz-mobile.png)
+![Quiz Page](assets/images/readme/quiz-mobile.png)
 
 ### Results Page
 **Desktop**
-![Results Page](readme/results-desktop.png)
+![Results Page](assets/images/readme/results-desktop.png)
 
 **Mobile**
-![Results Page](readme/results-mobile.png)
+![Results Page](assets/images/readme/results-mobile.png)
 
 ### Unfixed Bugs
 - 1 unfixed bug found [quiz File](#quiz)
