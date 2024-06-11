@@ -118,6 +118,7 @@ The Test Your Knowledge quiz is designed for students and anyone interested in l
 - Home Page: Verified the name input and "Take Quiz" button functionality.
 - Quiz Page: Tested the display of questions, answer selection, feedback, and progress tracking.
 - Result Page: Confirmed the display of the final score and functionality of the "Restart Quiz" and "Go Home" buttons.
+# ADD THE TABEL
 
 ## Validator Testing
 ### CSS : [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
@@ -135,8 +136,11 @@ Got an error on the retake button. No changes have been made.
 **No Bugs Found**
 ![html Validator](readme/index-validation.png)
 
-### javascript testing 
+### javascript testing : [Javascript Validator](https://jshint.com/)
+![javascript Validator](readme/js-hint.png)
+A comment of the version name was added and no errors were returned for both files, just the questions variable which was called in a separate file.
 
+![javascript Validator](readme/js-fixed.png)
 
 ### Google Lighthouse 
 ### Home Page and Quiz Page
