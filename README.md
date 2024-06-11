@@ -181,17 +181,17 @@ A comment of the version name was added and no errors were returned for both fil
 
 ### Quiz Page
 **Desktop**
-![Quiz Page ](readme/quiz-desktop.png)
+![Quiz Page](readme/quiz-desktop.png)
 
 **Mobile**
-![Quiz Page ](readme/quiz-mobile.png)
+![Quiz Page](readme/quiz-mobile.png)
 
 ### Results Page
 **Desktop**
-![Results Page ](readme/results-desktop.png)
+![Results Page](readme/results-desktop.png)
 
 **Mobile**
-![Results Page ](readme/results-mobile.png)
+![Results Page](readme/results-mobile.png)
 
 ### Unfixed Bugs
 - 1 unfixed bug found [quiz File](#quiz)
