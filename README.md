@@ -65,10 +65,10 @@ Tailored styling for large devices such as laptops and desktops (992px and up).
 ![Home page](readme/mockup-homepage.png)
 
 ### Quiz Page
-![Home page](readme/mockup-quizpage.png)
+![Quiz page](readme/mockup-quizpage.png)
 
 ### Result Page
-![Home page](readme/mockup-feedback.png)
+![Result page](readme/mockup-feedback.png)
 
 ### Existing Features
 - Home Page: Requires a user to enter their name before starting the quiz.
@@ -119,13 +119,24 @@ The Test Your Knowledge quiz is designed for students and anyone interested in l
 - Quiz Page: Tested the display of questions, answer selection, feedback, and progress tracking.
 - Result Page: Confirmed the display of the final score and functionality of the "Restart Quiz" and "Go Home" buttons.
 
-### Validator Testing
+## Validator Testing
+### CSS : [Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
+**No Bugs Found**
+![Css Validator](readme/css-validation.png)
 
-#### HTML on
+### HTML : [W3C Validator](https://validator.w3.org/)
+### Quiz Page
+**1 Unfixed Bug**
 
-#### CSS on
+![HTML Validator](readme/unfixed-quiz.png)
+Got an error on the retake button. No changes have been made.
+
+### Home Page
+**No Bugs Found**
+![html Validator](readme/index-validation.png)
 
 ### javascript testing 
+
 
 ### Google Lighthouse 
 ### Home Page and Quiz Page
